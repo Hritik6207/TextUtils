@@ -28,7 +28,7 @@ export default function TextForm(props) {
         <div className="container my-3">
    <div className="form-floating">
     <div className="cont d-flex p-2">
-  <textarea className="form-control" onChange={handleonchange} value={text} id="floatingTextarea"></textarea>
+  <textarea className="form-control" onChange={handleonchange} value={text} id="floatingTextarea" style={{backgroundColor:props.mode==='dark'?'black':'white'}}></textarea>
   
   <button type="button"  onClick={handleclearclick} className="btn btn-success my-3 mx-2 btn-sm">Clear</button></div>
 
@@ -43,7 +43,7 @@ export default function TextForm(props) {
 </div>
 </div>
 <h5>Preview</h5>
-<p>{text}</p>
+<p>{text.length>0?text:"NULL"}</p>
     </div>
     </>
   )
