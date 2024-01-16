@@ -4,10 +4,12 @@ export default function TextForm(props) {
   const handleupclick=()=>{
     let newText=text.toUpperCase();
     setText(newText);
-  }
+    props.showalert("Converted to Uppercase","info");
+    }
   const handlelowclick=()=>{
     let newText=text.toLowerCase();
     setText(newText);
+    props.showalert("Converted to Lowercase","info");
   }
   const handleclearclick=()=>{
     let newText='';
@@ -19,6 +21,7 @@ export default function TextForm(props) {
   const [text,setText]=useState("");
   const handleCopy = () => {
     navigator.clipboard.writeText(text);
+    props.showalert("Copied to Clipboard","info");
   }
 
   return (
