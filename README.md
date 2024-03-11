@@ -1,1 +1,2 @@
-SnapNews is a API based news web app which fetches latest news on the basis of the news type.
+--> React project enabling seamless text manipulation. Functions include uppercase/lowercase, copy, summarize, and preview for streamlined tasks.
+--> Features word/character counts and estimated reading time for efficient text handling.
